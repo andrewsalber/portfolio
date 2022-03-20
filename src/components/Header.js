@@ -13,7 +13,7 @@ function Header() {
                 </a>
                 
                 <nav class="nav nav-pills">
-                    <NavLink className={currPath === "/about" || "/" && currPath !== "/experience" && currPath !== "/projects" ? 'nav-link active' : 'nav-link'} aria-current={currPath === "/about" ? "page" : ""} to="/about">About</NavLink>
+                    <NavLink className={(currPath === "/about" || "/") && (currPath !== "/experience" && currPath !== "/projects") ? 'nav-link active' : 'nav-link'} aria-current={currPath === "/about" ? "page" : ""} to="/about">About</NavLink>
                     <NavLink className={currPath === "/experience" ? 'nav-link active' : 'nav-link'} aria-current={currPath === "/experience" ? "page" : ""} to="/experience">Experience</NavLink>
                     <NavLink className={currPath === "/projects" ? 'nav-link active' : 'nav-link'} aria-current={currPath === "/projects" ? "page" : ""} to="/projects">Projects</NavLink>
                 </nav>

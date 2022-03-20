@@ -2,7 +2,7 @@ function Project(props) {
     return (
         <div className="col">
             <a href = {props.url} target="_blank" style={{textDecoration: "none"}}>
-                <div className="card card-cover h-100 overflow-hidden text-black bg-dark rounded-5 shadow-lg" style={{
+                <div className="card card-cover h-100 overflow-hidden text-black bg-white rounded-5 shadow-lg" style={{
                     backgroundImage: `url(${props.photoLocation})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
